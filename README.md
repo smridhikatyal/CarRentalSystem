@@ -21,7 +21,7 @@ Basic console-based user interface.
 Installation
 Clone the repository:
 
-git clone https://github.com/your-username/car-rental-system.git
+git clone https://github.com/smridhikatyal/car-rental-system.git
 Navigate to the project directory:
 
 cd car-rental-system
