@@ -12,12 +12,7 @@ Classes and Methods
 Example
 License
 Features
-Add cars to the system.
-Add customers to the system.
-Rent available cars to customers.
-Return rented cars.
-Calculate rental price based on the number of days.
-Basic console-based user interface.
+
 Installation
 Clone the repository:
 
