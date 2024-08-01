@@ -35,39 +35,81 @@ java car_rental_system.Main
 Usage
 Once the application is running, follow the on-screen prompts to:
 
-Rent a car: Enter your name, choose an available car by its ID, and specify the number of rental days.
-Return a car: Enter the car ID you want to return.
-Classes and Methods
+Car Rental System
+This is a simple Car Rental System implemented in Java using Object-Oriented Programming (OOP) principles. The system allows customers to rent and return cars. The system tracks available cars, customers, and rental transactions.
+
+Features
+Add cars to the rental system
+Add customers to the system
+Rent available cars to customers
+Return rented cars
+Calculate the total price for a rental period
+Classes
 Car
 Represents a car in the rental system.
 
-Car(String carId, String brand, String model, double basePricePerDay): Constructor to initialize a car.
-String getCarId(): Returns the car ID.
-String getBrand(): Returns the car brand.
-String getModel(): Returns the car model.
-double calculatePrice(int rentalDays): Calculates the rental price for the specified number of days.
-boolean isAvailable(): Checks if the car is available for rent.
-void rent(): Marks the car as rented.
-void returnCar(): Marks the car as available.
+Attributes:
+
+String carId
+String brand
+String model
+double basePricePerDay
+boolean isAvailable
+Methods:
+
+Car(String carId, String brand, String model, double basePricePerDay)
+String getCarId()
+String getBrand()
+String getModel()
+double calculatePrice(int rentalDays)
+boolean isAvailable()
+void rent()
+void returnCar()
 Customer
 Represents a customer in the rental system.
 
-Customer(String customerId, String name): Constructor to initialize a customer.
-String getCustomerId(): Returns the customer ID.
-String getName(): Returns the customer name.
+Attributes:
+
+String customerId
+String name
+Methods:
+
+Customer(String customerId, String name)
+String getCustomerId()
+String getName()
 Rental
 Represents a rental transaction.
 
-Rental(Car car, Customer customer, int days): Constructor to initialize a rental.
-Car getCar(): Returns the rented car.
-Customer getCustomer(): Returns the customer who rented the car.
-int getDays(): Returns the number of rental days.
-CarRentalSystem
-Manages the car rental system.
+Attributes:
 
-CarRentalSystem(): Constructor to initialize the car rental system.
-void addCar(Car car): Adds a car to the system.
-void addCustomer(Customer customer): Adds a customer to the system.
-void rentCar(Car car, Customer customer, int days): Rents a car to a customer for the specified number of days.
-void returnCar(Car car): Returns a rented car.
-void menu(): Displays the main menu and handles user input.
+Car car
+Customer customer
+int days
+Methods:
+
+Rental(Car car, Customer customer, int days)
+Car getCar()
+Customer getCustomer()
+int getDays()
+CarRentalSystem
+The main system class that manages cars, customers, and rentals.
+
+Attributes:
+
+List<Car> cars
+List<Customer> customers
+List<Rental> rentals
+Methods:
+
+CarRentalSystem()
+void addCar(Car car)
+void addCustomer(Customer customer)
+void rentCar(Car car, Customer customer, int days)
+void returnCar(Car car)
+void menu()
+Usage
+Add Cars: Initialize the CarRentalSystem and add cars to it.
+Add Customers: Customers are added when they rent a car.
+Rent a Car: Customers can rent a car if it is available.
+Return a Car: Customers can return rented cars.
+Menu: The system provides a menu for renting and returning cars.
